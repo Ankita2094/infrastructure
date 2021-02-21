@@ -8,3 +8,14 @@ ssh -i prodkeys.pem ubuntu@34.204.69.106
 sudo apt install mysql-client-core-5.7
 sudo mysql -h csye6225-f20.ckmmnc7r7je6.us-east-1.rds.amazonaws.com -u csye6225fall2020 -p
 SELECT id, user, host, connection_type FROM performance_schema.threads pst INNER JOIN information_schema.processlist isp ON pst.processlist_id = isp.id;
+
+
+
+
+WEBAPP,AMI and INFRASTRUCTURE setup for application
+
+1. Create a new ami by triggering github actions by making commit to your repositoryy
+2. In infrastructure switch to main branch and create infrastructure by tyoing following command "terraform apply"
+3. After infrastructure is setup trigger github actions for code deploy to run and setup webapp on all the EC2 instances present
+4. Trigger github actions in serverless repository to setup/update lambda function and setup SNS and SES.
+5. Destroy the infrastructure by command "terraform destroy"
