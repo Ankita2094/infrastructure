@@ -19,3 +19,11 @@ WEBAPP,AMI and INFRASTRUCTURE setup for application
 3. After infrastructure is setup trigger github actions for code deploy to run and setup webapp on all the EC2 instances present
 4. Trigger github actions in serverless repository to setup/update lambda function and setup SNS and SES.
 5. Destroy the infrastructure by command "terraform destroy"
+
+
+
+ADD SECRETS To GITHUB BEFORE ALL THE SETUPS TO EVERY REPOSITORY:
+AWS_ACCESS_KEY
+AWS_SECRET_ACCESS_KEY
+AWS_S3_BUCKET
+AWS_REGION
