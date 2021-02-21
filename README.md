@@ -1,5 +1,10 @@
 # infrastructure
 
+ARCHITECTURE DIAGRAM :
+![ArchitectureDiagram](https://user-images.githubusercontent.com/69026663/108641722-d2652280-746e-11eb-9af1-5e51f3896457.png)
+
+
+
 
 AWS Certificate command : aws acm import-certificate --certificate fileb://prod_tiwariank_me.crt --certificate-chain fileb://prod_tiwariank_me.ca-bundle --private-key fileb://example_com.key
 
@@ -27,3 +32,7 @@ AWS_ACCESS_KEY
 AWS_SECRET_ACCESS_KEY
 AWS_S3_BUCKET
 AWS_REGION
+
+
+
+
